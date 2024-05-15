@@ -1,0 +1,44 @@
+.login-container {
+    display: flex;
+    gap: 3rem;
+    margin: 3rem 0rem;
+
+    &__image {
+        display: flex;
+        justify-content: end;
+        width: 45%;
+    }
+
+    &__img {
+        width: 30%;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        justify-content: space-evenly;
+    }
+
+    &__input {
+        max-width: 20rem;
+    }
+
+    &__buttons {
+        margin-top: 1rem;
+    }
+
+    &__button-text {
+        margin: 0 auto;
+    }
+
+    &__button-cancel {
+        cursor: pointer;
+    }
+
+    &__button-login{
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+}

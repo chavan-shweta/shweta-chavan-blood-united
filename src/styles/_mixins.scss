@@ -1,0 +1,42 @@
+@use "variables" as *;
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+// flexbox
+@mixin flex($dir: row) {
+  display: flex;
+  flex-direction: $dir;
+}
+
+@mixin cta($maxw) {
+  @include responsive-property(height, 36px, 38px);
+
+  border-radius: 20px;
+  width: 100%;
+
+  @include tablet {
+    width: 50%;
+    max-width: $maxw;
+  }
+}
+
+@mixin responsive-property($prop, $val1, $val2, $val3: $val2) {
+  #{$prop}: $val1;
+
+  @include tablet {
+    #{$prop}: $val2;
+  }
+  @include desktop {
+    #{$prop}: $val3;
+  }
+}

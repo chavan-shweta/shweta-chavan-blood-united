@@ -1,0 +1,45 @@
+.user-registration {
+    display: flex;
+    padding: 1rem 0rem 2rem 4rem;
+
+    &__details {
+        width: 50%;
+    }
+
+    &__contact {
+        width: 50%;
+    }
+
+    &_radio-radio {
+        transform: scale(0.5);
+        width: 4rem;
+        vertical-align: -0.8rem;
+        margin-left: -1.4rem;
+    }
+
+    &__input {
+        max-width: 25rem;
+    }
+
+    &__buttons {
+        padding: 0rem 4rem 4rem 4rem;
+    }
+
+    &__button-save {}
+
+    &__button-cancel {}
+
+    &__button-text {
+        margin: 0 auto;
+    }
+}
+
+.add_radio {
+    transform: scale(0.5);
+    width: 4rem;
+    vertical-align: -0.8rem;
+}
+
+.form-field {
+    margin-bottom: 1rem;
+}

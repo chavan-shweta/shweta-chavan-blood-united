@@ -1,0 +1,33 @@
+
+@use "typography" as *;
+@use "variables" as *;
+@use "mixins" as *;
+
+body {
+    font-family: "Titillium Web", Helvetica, sans-serif;
+    color: $color-text;
+    background: $color-bg;
+  }
+  
+  input {
+    @include cta(17.125rem);
+    padding: 0 1rem;
+    border: 0.0625rem solid $color-border;
+    background-color: $color-bg;
+    margin-top: 0.5rem;
+  }
+  
+  button {
+    @include cta(10.5rem);
+    border: 0.0625rem solid $color-cta;
+    color: $color-bg;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+    background: $color-cta;
+    vertical-align: middle;
+  }
+
+  .label{
+    color: #13182c;
+    font-weight: bold;
+  }

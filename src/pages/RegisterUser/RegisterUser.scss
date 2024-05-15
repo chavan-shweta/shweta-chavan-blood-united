@@ -1,0 +1,18 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/variables" as *;
+
+.register-user {
+
+    margin: 0rem 4rem;
+
+    &__title {
+        display: flex;
+        color: $color-info;
+    }
+
+    &__return {
+        cursor: pointer;
+        padding-right: 1rem;
+    }  
+}

@@ -1,0 +1,88 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/variables" as *;
+
+.navbar {
+  height: 12.5rem;
+  display: flex;
+  background-color: $color-bg-nav;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    @include tablet {
+     // height: 5.75rem;
+      padding-bottom: 5.75rem;
+      flex-direction: row;
+      margin: 0 1%;
+      padding-top: 1.5rem;
+    }
+    @include desktop {
+      margin: 0 8%;
+    }
+  }
+
+  &__container-main{
+    display: flex;
+    align-items: center;
+  }
+
+&__name-container{
+    font-size: 1.8rem;
+    color: $color-text;
+}
+
+  &__logo-container {
+    width: 20%;
+    @include tablet {
+      margin-left: 1.5625rem;
+    }
+  }
+  &__img {
+     margin-top: 0.9rem;
+
+    border-radius: 50%;
+    width: 70%;
+    margin: 0 auto;
+    @include tablet {
+      margin-top: 0.625rem;
+    }
+  }
+  &__links {
+    width: 100%;
+
+    @include tablet {
+      width: 28%;
+    }
+    @include desktop {
+      width: 25%;
+    }
+  }
+  &__link {
+    margin: 0 0.9375rem;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    @include tablet {
+      margin: 0.625rem 0 0 0;
+      width: 100%;
+    }
+  }
+}
+.navbar__link {
+  color: $color-nav;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+.navbar__link:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  border-radius: 30px;
+}

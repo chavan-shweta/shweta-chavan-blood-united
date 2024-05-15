@@ -1,0 +1,26 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/variables" as *;
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__info-div {
+        width: 40%;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        text-align: center;
+        color: $color-info;
+    }
+
+    &__image-div {
+        width: 50%;
+    }
+
+    &__image {
+        width: 95%;
+        height: 90%;
+    }
+}
